@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
-a recursive function that queries the Reddit API and 
+a recursive function that queries the Reddit API and
 returns a list containing the titles of all hot articles for a given subreddit.
- If no results are found for the given subreddit, the function should 
+ If no results are found for the given subreddit, the function should
  return None.
 """
 import requests

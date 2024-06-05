@@ -1,13 +1,12 @@
 #!/usr/bin/python3
 """
 a recursive function that queries the Reddit API,
- parses the title of all hot articles, and prints a sorted count of given 
- keywords (case-insensitive, delimited by spaces. 
+ parses the title of all hot articles, and prints a sorted count of given
+ keywords (case-insensitive, delimited by spaces.
  Javascript should count as javascript, but java should not).
 """
 import requests
 import re
-
 
 
 def add_title(dictionary, hot_posts):
@@ -70,4 +69,3 @@ def count_words(subreddit, word_list, dictionary=None):
     for item in sorted_items:
         if item[1] > 0:
             print("{}: {}".format(item[0], item[1]))
-            
